@@ -10,22 +10,25 @@
                 </div>
                 <div class="user-profile-header d-flex flex-column flex-sm-row text-sm-start text-center mb-4">
                     <div class="flex-shrink-0 mt-n2 mx-sm-0 mx-auto">
-                        <img src="{{ Storage::url($academy->thumbnail) }}" alt="user image" width="200px"
+                        <img src="{{ Storage::url($argument->thumbnail) }}" alt="user image" width="200px"
                             class="d-block h-auto ms-0 ms-sm-4 rounded user-profile-img">
                     </div>
                     <div class="flex-grow-1 mt-3 mt-sm-5">
                         <div
                             class="d-flex align-items-md-end align-items-sm-start align-items-center justify-content-md-between justify-content-start mx-4 flex-md-row flex-column gap-4">
                             <div class="user-profile-info">
-                                <h4 class="fw-bold">{{ $academy->title }}</h4>
+                                <h4 class="fw-bold">{{ $argument->title }}</h4>
                                 <ul
                                     class="list-inline mb-0 d-flex align-items-center flex-wrap justify-content-sm-start justify-content-center gap-2">
                                     <li class="list-inline-item fw-semibold">
-                                        <i class="bx bx-pen"></i> Menulis Akademik
+                                        <i class="bx bx-pen"></i> Menulis Argument
+                                    </li>
+                                    <li class="list-inline-item fw-semibold">
+                                        <i class="bx bx-book"></i> {{ $argument->argumentCategory->name }}
                                     </li>
                                     <li class="list-inline-item fw-semibold">
                                         <i class="bx bx-calendar-alt"></i>
-                                        {{ Carbon\carbon::parse($academy->created_at)->format('D, d m Y') }}
+                                        {{ Carbon\carbon::parse($argument->created_at)->format('D, d m Y') }}
                                     </li>
                                 </ul>
                             </div>
@@ -45,7 +48,7 @@
                                     gambar.</p>
                             </div>
 
-                            @include('academy.edit')
+                            @include('argument.edit')
                         </div>
                     </div>
 
@@ -58,7 +61,7 @@
                                 <strong>Failed</strong> You should check in on some of those fields below.
                             </div>
                         @endif
-                        {!! $academy->description !!}
+                        {!! $argument->description !!}
                     </div>
                 </div>
             </div>

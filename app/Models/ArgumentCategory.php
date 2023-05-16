@@ -9,7 +9,9 @@ class ArgumentCategory extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'slug', 'name', 'description'
+    ];
 
     protected $table = 'argument_categories';
 

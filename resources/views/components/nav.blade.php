@@ -11,7 +11,7 @@
     <li class="menu-item">
         <a href="{{ route('materials') }}" class="menu-link">
             <i class="menu-icon tf-icons bx bx-home-circle"></i>
-            <div data-i18n="Analytics">Semua Materi</div>
+            <div data-i18n="materials">Semua Materi</div>
         </a>
     </li>
 
@@ -19,45 +19,16 @@
     <li class="menu-item">
         <a href="{{ route('academy') }}" class="menu-link">
             <i class="menu-icon tf-icons bx bx-home-circle"></i>
-            <div data-i18n="Analytics">Menulis Akademik</div>
+            <div data-i18n="academy">Menulis Akademik</div>
         </a>
     </li>
 
-    <!-- Layouts -->
-
+    <!-- manulis argument -->
     <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons bx bx-layout"></i>
-            <div data-i18n="Layouts">Layouts</div>
+        <a href="{{ route('argument') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+            <div data-i18n="argument">Menulis Argument</div>
         </a>
-
-        <ul class="menu-sub">
-            <li class="menu-item">
-                <a href="layouts-without-menu.html" class="menu-link">
-                    <div data-i18n="Without menu">Without menu</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="layouts-without-navbar.html" class="menu-link">
-                    <div data-i18n="Without navbar">Without navbar</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="layouts-container.html" class="menu-link">
-                    <div data-i18n="Container">Container</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="layouts-fluid.html" class="menu-link">
-                    <div data-i18n="Fluid">Fluid</div>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="layouts-blank.html" class="menu-link">
-                    <div data-i18n="Blank">Blank</div>
-                </a>
-            </li>
-        </ul>
     </li>
 
 </ul>

@@ -200,7 +200,7 @@
                     <!-- Content -->
 
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h1 class="fw-bold">{{ $title ?? '' }}</h1>
+                        <h3 class="fw-bold">{{ $title ?? '' }}</h3>
                         {{ $slot }}
                         <!-- / Content -->
 

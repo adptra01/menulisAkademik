@@ -21,11 +21,12 @@
                                 <th>no</th>
                                 <th>thumbnail</th>
                                 <th>judul</th>
+                                <th>kategori</th>
                                 <th>pilihan</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($academies as $no => $item)
+                            @foreach ($arguments as $no => $item)
                                 <tr>
                                     <td>{{ ++$no }}</td>
                                     <td>
@@ -33,13 +34,13 @@
                                             src="{{ Storage::url($item->thumbnail) }}" alt="Avatar">
                                     </td>
                                     <td>{{ Str::limit($item->title, 25, '...') }}</td>
+                                    <td>{{ $item->argumentCategory->name }}</td>
                                     <td>
                                         <div class="d-inline justify-content-center">
                                             <a class="btn btn-info m-1 btn-sm"
-                                                href="{{ Route('academy.show', $item->slug) }}"><i
+                                                href="{{ Route('argument.show', $item->slug) }}"><i
                                                     class="bx bx-edit-alt me-1"></i>Lihat</a>
-                                            <form id="destroy-academy"
-                                                action="{{ route('academy.destroy', $item->slug) }}" method="POST">
+                                            <form action="{{ route('argument.destroy', $item->slug) }}" method="POST">
                                                 <button type="submit" class="btn btn-danger btn-sm"><i
                                                         class="bx bx-trash me-1"></i>Hapus</button>
                                                 @csrf
@@ -54,14 +55,29 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="navs-pills-within-card-link" role="tabpanel">
-                <form action="{{ route('academy.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('argument.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <div class="row g-2">
+                    <div class="row">
                         <div class="mb-3 col-sm">
                             <label for="title" class="form-label">Judul</label>
                             <input type="text" value="{{ old('title') }}" name="title" id="title"
                                 class="form-control" placeholder="Enter title">
                             @error('title')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="row g-2">
+                        <div class="mb-3 col-sm">
+                            <label for="argument_category_id" class="form-label">Kategori Argumen</label>
+                            <select class="form-select form-select" name="argument_category_id"
+                                id="argument_category_id">
+                                <option selected disabled>Select one</option>
+                                @foreach ($categories as $item)
+                                    <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                @endforeach
+                            </select>
+                            @error('argument_category_id')
                                 <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
@@ -76,7 +92,7 @@
                     <div class="row">
                         <div class="mb-3 col">
                             <label for="description" class="form-label">Isi Materi</label>
-                            <textarea class="form-control" name="description" value="{{ old('description') }}" id="editor" rows="3"></textarea>
+                            <textarea class="form-control" name="description" id="editor" rows="3">{{ old('description') }}</textarea>
                             @error('description')
                                 <small class="text-danger">{{ $message }}</small>
                             @enderror

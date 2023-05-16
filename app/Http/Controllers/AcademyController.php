@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AcademiesRequest;
 use App\Models\Academy;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -30,7 +31,7 @@ class AcademyController extends Controller
         ]);
     }
 
-    public function store(Request $request)
+    public function store(AcademiesRequest $request)
     {
 
         $file = $request->file('thumbnail');
@@ -57,7 +58,7 @@ class AcademyController extends Controller
         ]);
     }
 
-    public function update(Request $request, $slug)
+    public function update(AcademiesRequest $request, $slug)
     {
         $academy = Academy::where('slug', $slug)->firstOrFail();
 

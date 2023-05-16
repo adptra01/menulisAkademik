@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Academy;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AcademyController extends Controller
 {
@@ -24,7 +26,64 @@ class AcademyController extends Controller
     public function index()
     {
         return view('academy.index', [
-            'academies' => Academy::get(),
+            'academies' => Academy::latest()->get(),
         ]);
+    }
+
+    public function store(Request $request)
+    {
+
+        $file = $request->file('thumbnail');
+        $fileName = time() . '_' . $file->getClientOriginalName();
+        $filePath = $file->storeAs('thumbnail', $fileName, 'public');
+
+        Academy::create([
+            'title' => $request->title,
+            'slug' => Str::slug($request->title),
+            'thumbnail' => $filePath,
+            'description' => $request->description,
+        ]);
+
+     return back()->with('success', 'New academy materials created successfully.');
+    }
+
+    public function show($slug)
+    {
+        Academy::whereSlug($slug)->first();
+
+        return view('academy.show', [
+            'academy' => Academy::whereSlug($slug)->first()
+
+        ]);
+    }
+
+    public function update(Request $request, $slug)
+    {
+        $academy = Academy::where('slug', $slug)->firstOrFail();
+
+        if ($request->hasFile('thumbnail')) {
+            $file = $request->file('thumbnail');
+            $fileName = time() . '_' . $file->getClientOriginalName();
+            $filePath = $file->storeAs('thumbnail', $fileName, 'public');
+
+            Storage::disk('public')->delete($academy->thumbnail);
+            $academy->thumbnail = $filePath;
+        }
+
+        $academy->slug = Str::slug($request->title);
+        $academy->title = $request->title;
+        $academy->description = $request->description;
+        $academy->save();
+
+        return redirect()->route('academy')->with('success', 'Materials academy has updated.');
+    }
+
+    public function destroy($slug)
+    {
+        $academy = Academy::whereSlug($slug)->first();
+        Storage::disk('public')->delete($academy->thumbnail);
+        $academy->delete();
+
+        return back()->with('success', 'Academy Materials deleted successfully.');
     }
 }

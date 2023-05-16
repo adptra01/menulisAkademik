@@ -9,7 +9,4 @@
         .catch(error => {
             console.error(error);
         });
-    $('#basicModal').modal({
-        focus: false,
-    });
 </script>

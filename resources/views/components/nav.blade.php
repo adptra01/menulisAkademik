@@ -9,6 +9,14 @@
 
     <!-- Dashboard -->
     <li class="menu-item">
+        <a href="{{ route('materials') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+            <div data-i18n="Analytics">Semua Materi</div>
+        </a>
+    </li>
+
+    <!-- manulis akademik -->
+    <li class="menu-item">
         <a href="{{ route('academy') }}" class="menu-link">
             <i class="menu-icon tf-icons bx bx-home-circle"></i>
             <div data-i18n="Analytics">Menulis Akademik</div>
@@ -16,6 +24,7 @@
     </li>
 
     <!-- Layouts -->
+
     <li class="menu-item">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons bx bx-layout"></i>

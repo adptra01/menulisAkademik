@@ -9,5 +9,7 @@ class Academy extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'title', 'slug', 'description', 'thumbnail'
+    ];
 }

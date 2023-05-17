@@ -10,13 +10,17 @@ use Illuminate\Support\Facades\Storage;
 
 class AcademyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function storeImage(Request $request)
     {
         if ($request->hasFile('upload')) {
             $originName = $request->file('upload')->getClientOriginalName();
             $fileName = pathinfo($originName, PATHINFO_FILENAME);
             $extension = $request->file('upload')->getClientOriginalExtension();
-            $fileName = $fileName . '_' . time() . '.' . $extension;
+            $fileName = $fileName . '_' . rand(0,9999999) . '.' . $extension;
     
             $request->file('upload')->move(public_path('media'), $fileName);
     
@@ -35,7 +39,7 @@ class AcademyController extends Controller
     {
 
         $file = $request->file('thumbnail');
-        $fileName = time() . '_' . $file->getClientOriginalName();
+        $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
         $filePath = $file->storeAs('thumbnail', $fileName, 'public');
 
         Academy::create([
@@ -64,7 +68,7 @@ class AcademyController extends Controller
 
         if ($request->hasFile('thumbnail')) {
             $file = $request->file('thumbnail');
-            $fileName = time() . '_' . $file->getClientOriginalName();
+            $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
             $filePath = $file->storeAs('thumbnail', $fileName, 'public');
 
             Storage::disk('public')->delete($academy->thumbnail);

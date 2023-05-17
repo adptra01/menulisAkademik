@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Storage;
 
 class ArgumentController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         return view('argument.index', [
@@ -22,7 +26,7 @@ class ArgumentController extends Controller
     public function store(ArgumentsRequest $request)
     {
         $file = $request->file('thumbnail');
-        $fileName = time() . '_' . $file->getClientOriginalName();
+        $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
         $filePath = $file->storeAs('thumbnail', $fileName, 'public');
 
         Argument::create([
@@ -52,7 +56,7 @@ class ArgumentController extends Controller
 
         if ($request->hasFile('thumbnail')) {
             $file = $request->file('thumbnail');
-            $fileName = time() . '_' . $file->getClientOriginalName();
+            $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
             $filePath = $file->storeAs('thumbnail', $fileName, 'public');
 
             Storage::disk('public')->delete($argument->thumbnail);

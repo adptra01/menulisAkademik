@@ -20,7 +20,7 @@ class AcademyFactory extends Factory
     public function definition()
     {
         $file = UploadedFile::fake()->image('thumbnail.jpg');
-        $fileName = time() . '_' . $file->getClientOriginalName();
+        $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
         $filePath = $file->storeAs('thumbnail', $fileName, 'public');
 
         return [

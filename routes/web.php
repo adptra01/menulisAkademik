@@ -4,6 +4,7 @@ use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\ArgumentCategoryController;
 use App\Http\Controllers\ArgumentController;
 use App\Http\Controllers\HomeController;
+use App\Models\Academy;
 use App\Models\ArgumentCategory;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -23,15 +24,25 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome' , [
+        'academies' => Academy::limit(6)->get()
+    ]);
+});
+Route::get('/courses-academies', [HomeController::class, 'academies'])->name('courses.academies');
+Route::get('/courses-arguments', [HomeController::class, 'arguments'])->name('courses.arguments');
+
+Route::get('courses/{slug}', [HomeController::class, 'details'])->name('details');
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::post('/image-upload', [AcademyController::class, 'storeImage'])->name('image.upload');
+    Route::get('/materials', [HomeController::class, 'materials'])->name('materials');
 });
 
-Route::post('/image-upload', [AcademyController::class, 'storeImage'])->name('image.upload');
 
-Route::get('/materials', [HomeController::class, 'materials'])->name('materials');
 
 Route::prefix('/academies')->group(function () {
     Route::get('/', [AcademyController::class, 'index'])->name('academy');

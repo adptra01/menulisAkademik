@@ -25,7 +25,6 @@ class AcademiesRequest extends FormRequest
     {
         return [
             'title' => 'required|min:5',
-            'slug' => 'required|min:5',
             'description' => 'required|min:20',
         ];
     }

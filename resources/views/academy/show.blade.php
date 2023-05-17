@@ -1,5 +1,12 @@
 <x-layout>
-    <x-slot name="title"></x-slot>
+    <x-slot name="title">{{ $academy->title }}</x-slot>
+    @if ($errors->any())
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            <strong>Failed</strong> You should check in on some of those fields below.
+        </div>
+    @endif
     <div class="row">
         <div class="col-12">
             <div class="card mb-4">
@@ -50,14 +57,6 @@
                     </div>
 
                     <div class="container">
-                        @if ($errors->any())
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                    aria-label="Close"></button>
-
-                                <strong>Failed</strong> You should check in on some of those fields below.
-                            </div>
-                        @endif
                         {!! $academy->description !!}
                     </div>
                 </div>

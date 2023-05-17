@@ -2,15 +2,15 @@
 
 namespace Database\Factories;
 
+use App\Models\ArgumentCategory;
 use Illuminate\Support\Str;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Http\UploadedFile;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Academy>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Argument>
  */
-class AcademyFactory extends Factory
+class ArgumentFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -26,6 +26,9 @@ class AcademyFactory extends Factory
         return [
             'slug' => Str::slug($this->faker->sentence()),
             'thumbnail' => $filePath,
+            'argument_category_id' => function () {
+                return ArgumentCategory::all()->random();
+            },
             'title' => $this->faker->sentence(),
             'description' => $this->faker->paragraphs(),
         ];

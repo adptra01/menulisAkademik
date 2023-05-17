@@ -1,24 +1,36 @@
 <x-layout>
-    <x-slot name="title">Semua Maateri</x-slot>
-    <div class="row">
+    <x-slot name="title">Semua Materi</x-slot>
+    <h5 class="fw-bold">Menulis Akademik</h5>
+    <div class="row mb-5 row-cols-1 row-cols-md-3 g-4">
         @foreach ($academies as $item)
-            <div class="col-md">
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img class="card-img card-img-left border border-5 border-white rounded"
-                                src="{{ Storage::url($item->thumbnail) }}" alt="Card image" width="50px" height="100px"
-                                style="object-fit: cover;" />
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">{{ $item->title }}</h5>
-                                <small>Menulis Akademik</small>
-                                <p class="card-text"><small
-                                        class="text-muted">{{ Carbon\Carbon::parse($item->created_at)->diffForHumans() }}</small>
-                                </p>
-                            </div>
-                        </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="{{ Storage::url($item->thumbnail) }}" class="card-img" alt="..."
+                        style="object-fit: cover" width="200px" height="200px">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title text-white">Primary card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
+    <h5 class="fw-bold">Menulis Argumen</h5>
+    <div class="row mb-5 row-cols-1 row-cols-md-3 g-4">
+        @foreach ($arguments as $item)
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img src="{{ Storage::url($item->thumbnail) }}" class="card-img" alt="..."
+                        style="object-fit: cover" width="200px" height="200px">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title text-white">Primary card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
                     </div>
                 </div>
             </div>

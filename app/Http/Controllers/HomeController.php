@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Academy;
+use App\Models\Argument;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,16 +15,12 @@ class HomeController extends Controller
         ]);
     }
 
-    public function welcome()
-    {
-        return view('welcome', [
-        ]);
-    }
-
     public function materials()
     {
         return view('materials', [
             'academies' => Academy::latest()->get(),
+            'arguments' => Argument::get(),
+            
         ]);
     }
 }

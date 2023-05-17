@@ -7,7 +7,11 @@
             </li>
             <li class="nav-item">
                 <button type="button" class="nav-link" data-bs-toggle="tab"
-                    data-bs-target="#navs-pills-within-card-link" role="tab">Tambah</button>
+                    data-bs-target="#navs-pills-within-card-link" role="tab">Tambah
+                    @if ($errors->any())
+                        <sup class="fw-bold text-danger">!</sup>
+                    @endif
+                </button>
             </li>
         </ul>
     </div>
@@ -105,24 +109,10 @@
     </div>
 </div>
 @section('css')
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
-    <style>
-        table.dataTable thead tr,
-        table.dataTable thead th,
-        table.dataTable tbody th,
-        table.dataTable tbody td {
-            text-align: center;
-        }
-    </style>
+    @include('datatables.css')
 @endsection
 
 @section('js')
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
-        });
-    </script>
+    @include('datatables.script')
     @include('ckeditor')
 @endsection

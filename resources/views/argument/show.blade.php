@@ -1,5 +1,12 @@
 <x-layout>
-    <x-slot name="title"></x-slot>
+    <x-slot name="title">{{ $argument->title }}</x-slot>
+    @if ($errors->any())
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            <strong>Failed</strong> You should check in on some of those fields below.
+        </div>
+    @endif
     <div class="row">
         <div class="col-12">
             <div class="card mb-4">
@@ -21,7 +28,7 @@
                                 <ul
                                     class="list-inline mb-0 d-flex align-items-center flex-wrap justify-content-sm-start justify-content-center gap-2">
                                     <li class="list-inline-item fw-semibold">
-                                        <i class="bx bx-pen"></i> Menulis Argument
+                                        <i class="bx bx-pen"></i> Menulis Argumen
                                     </li>
                                     <li class="list-inline-item fw-semibold">
                                         <i class="bx bx-book"></i> {{ $argument->argumentCategory->name }}
@@ -53,14 +60,6 @@
                     </div>
 
                     <div class="container">
-                        @if ($errors->any())
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                    aria-label="Close"></button>
-
-                                <strong>Failed</strong> You should check in on some of those fields below.
-                            </div>
-                        @endif
                         {!! $argument->description !!}
                     </div>
                 </div>

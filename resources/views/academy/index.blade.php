@@ -27,16 +27,16 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="col-xl-4 col-lg-6 col-md-6">
             <div class="card h-100">
                 <div class="row h-100">
                     <div class="col-sm-5">
                         <div class="mt-3 d-flex align-items-end h-100 justify-content-center mt-sm-0">
                             <img src="/assets/img/illustrations/man-with-laptop-light.png" class="img-fluid"
-                            alt="Image" width="120"
-                            data-app-light-img="illustrations/sitting-girl-with-laptop-light.png"
-                            data-app-dark-img="illustrations/sitting-girl-with-laptop-dark.png">
+                                alt="Image" width="120"
+                                data-app-light-img="illustrations/sitting-girl-with-laptop-light.png"
+                                data-app-dark-img="illustrations/sitting-girl-with-laptop-dark.png">
                         </div>
                     </div>
                     <div class="col-sm-7">
@@ -49,8 +49,8 @@
         </div>
     </div>
     @if (session('success'))
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
             <strong>Success</strong> {{ session('success') }}
         </div>
@@ -58,7 +58,7 @@
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
-            <strong>Failed</strong> You should check in on some of those fields below.
+            <strong>Failed</strong> {{ $errors }}
         </div>
     @endif
     @include('academy.create')

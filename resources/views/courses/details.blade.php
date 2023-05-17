@@ -8,6 +8,7 @@
                 <div class="lg:col-span-2">
                     <div class="py-8 lg:pr-4 lg:pr-8">
                         <div class="space-y-5 lg:space-y-8">
+                            <img src="{{ Storage::url($details->thumbnail) }}" alt="thumbnail">
 
                             <h2 class="text-3xl font-bold lg:text-4xl lg:text-5xl dark:text-white">{{ $details->title }}
                             </h2>
@@ -21,17 +22,17 @@
                                         {{ $details->argumentCategory->name }}
                                     @endif
                                 </a>
-                                <p class="text-xs sm:text-sm text-gray-800 dark:text-gray-200">
+                                <p class="text-xs text-gray-800 sm:text-sm dark:text-gray-200">
                                     {{ Carbon\carbon::parse($details->created_at)->format('M d, Y') }}</p>
                             </div>
 
-                            <div class="text-lg text-gray-800 dark:text-gray-200">
+                            <article class="prose text-justify lg:prose-xl">
                                 @if (strip_tags($details->description) != $details->description)
                                     {!! $details->description !!}
                                 @else
                                     {{ $details->description }}
                                 @endif
-                            </div>
+                            </article>
 
 
 
@@ -61,7 +62,7 @@
 
                                 <div class="flex justify-end items-center gap-x-1.5">
                                     <!-- Button -->
-                                    <div class="hs-tooltip inline-block">
+                                    <div class="inline-block hs-tooltip">
                                         <button type="button"
                                             class="hs-tooltip-toggle py-2 px-3 inline-flex justify-center items-center gap-x-1.5 sm:gap-x-2 rounded-md font-medium bg-white text-gray-700 align-middle hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-300 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:focus:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-slate-900 dark:focus:ring-offset-blue-500">
                                             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
@@ -71,7 +72,7 @@
                                             </svg>
                                             875
                                             <span
-                                                class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-black"
+                                                class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-white transition-opacity bg-gray-900 rounded-md shadow-sm opacity-0 hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible dark:bg-black"
                                                 role="tooltip">
                                                 Like
                                             </span>
@@ -80,7 +81,7 @@
                                     <!-- Button -->
 
                                     <!-- Button -->
-                                    <div class="hs-tooltip inline-block">
+                                    <div class="inline-block hs-tooltip">
                                         <button type="button"
                                             class="hs-tooltip-toggle py-2 px-3 inline-flex justify-center items-center gap-x-1.5 sm:gap-x-2 rounded-md font-medium bg-white text-gray-700 align-middle hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-300 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:focus:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-slate-900 dark:focus:ring-offset-blue-500">
                                             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
@@ -90,7 +91,7 @@
                                             </svg>
                                             16
                                             <span
-                                                class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-black"
+                                                class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-white transition-opacity bg-gray-900 rounded-md shadow-sm opacity-0 hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible dark:bg-black"
                                                 role="tooltip">
                                                 Comment
                                             </span>
@@ -101,7 +102,7 @@
                                     <div class="block h-3 border-r border-gray-300 mx-1.5 dark:border-gray-600"></div>
 
                                     <!-- Button -->
-                                    <div class="hs-dropdown relative inline-flex">
+                                    <div class="relative inline-flex hs-dropdown">
                                         <button type="button" id="blog-article-share-dropdown"
                                             class="hs-dropdown-toggle py-2 px-3 inline-flex justify-center items-center gap-x-1.5 sm:gap-x-2 rounded-md font-medium bg-white text-gray-700 align-middle hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-300 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:focus:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-slate-900 dark:focus:ring-offset-blue-500">
                                             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
@@ -126,7 +127,7 @@
                                                 </svg>
                                                 Copy link
                                             </a>
-                                            <div class="border-t border-gray-200 my-2 dark:border-gray-700"></div>
+                                            <div class="my-2 border-t border-gray-200 dark:border-gray-700"></div>
                                             <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
                                                 href="#">
                                                 <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
@@ -170,16 +171,16 @@
                     <div class="sticky top-0 left-0 py-8 lg:pl-4 lg:pl-8">
                         <!-- Avatar Media -->
                         <div
-                            class="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-gray-700">
-                            <a class="block flex-shrink-0" href="#">
-                                <img class="h-10 w-10 rounded-full"
+                            class="flex items-center pb-8 mb-8 border-b border-gray-200 group gap-x-3 dark:border-gray-700">
+                            <a class="flex-shrink-0 block" href="#">
+                                <img class="w-10 h-10 rounded-full"
                                     src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                     alt="Image Description">
                             </a>
 
-                            <a class="group grow block" href="">
+                            <a class="block group grow" href="">
                                 <h5
-                                    class="group-hover:text-gray-600 text-sm font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
+                                    class="text-sm font-semibold text-gray-800 group-hover:text-gray-600 dark:group-hover:text-gray-400 dark:text-gray-200">
                                     Leyla Ludic
                                 </h5>
                                 <p class="text-sm text-gray-500">
@@ -207,7 +208,7 @@
 
                         <div class="space-y-6">
                             <!-- Media -->
-                            <a class="group flex items-center gap-x-6" href="#">
+                            <a class="flex items-center group gap-x-6" href="#">
                                 <div class="grow">
                                     <span
                                         class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
@@ -215,8 +216,8 @@
                                     </span>
                                 </div>
 
-                                <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                    <img class="w-full h-full absolute top-0 left-0 object-cover rounded-lg"
+                                <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
+                                    <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
                                         src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
                                         alt="Image Description">
                                 </div>
@@ -224,7 +225,7 @@
                             <!-- End Media -->
 
                             <!-- Media -->
-                            <a class="group flex items-center gap-x-6" href="#">
+                            <a class="flex items-center group gap-x-6" href="#">
                                 <div class="grow">
                                     <span
                                         class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
@@ -232,8 +233,8 @@
                                     </span>
                                 </div>
 
-                                <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                    <img class="w-full h-full absolute top-0 left-0 object-cover rounded-lg"
+                                <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
+                                    <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
                                         src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
                                         alt="Image Description">
                                 </div>
@@ -241,7 +242,7 @@
                             <!-- End Media -->
 
                             <!-- Media -->
-                            <a class="group flex items-center gap-x-6" href="#">
+                            <a class="flex items-center group gap-x-6" href="#">
                                 <div class="grow">
                                     <span
                                         class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
@@ -249,8 +250,8 @@
                                     </span>
                                 </div>
 
-                                <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                    <img class="w-full h-full absolute top-0 left-0 object-cover rounded-lg"
+                                <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
+                                    <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
                                         src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
                                         alt="Image Description">
                                 </div>

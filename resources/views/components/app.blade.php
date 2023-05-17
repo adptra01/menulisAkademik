@@ -4,14 +4,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? '' }}Page - Akademik Menulis</title>
+    <title>{{ $title ?? '' }} Page - Akademik Menulis</title>
     @vite('resources/css/app.css')
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,800;1,600&display=swap');
-
-        * {
+        body {
             font-family: 'Poppins', sans-serif;
+            font-size: 16px;
         }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* Style lainnya */
     </style>
 </head>
 
@@ -29,22 +46,22 @@
                     </label>
                     <ul tabindex="0"
                         class="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>Menulis Argumen</a></li>
-                        <li><a>Menulis Akademik</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{{ Route('courses.arguments') }}">Menulis Argumen</a></li>
+                        <li><a href="{{ Route('courses.academies') }}">Menulis Akademik</a></li>
                     </ul>
                 </div>
-                <a class="text-xl normal-case btn btn-ghost">daisyUI</a>
+                <a class="text-xl normal-case btn btn-ghost text-primary">Menulis</a>
             </div>
             <div class="hidden navbar-center lg:flex">
                 <ul class="px-1 menu menu-horizontal">
-                    <li><a>Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="{{ Route('courses.arguments') }}">Menulis Argumen</a></li>
                     <li><a href="{{ Route('courses.academies') }}">Menulis Akademik</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Get started</a>
+                <a class="btn btn-primary">Get started</a>
             </div>
         </div>
     </header>

@@ -6,34 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? '' }} Page - Akademik Menulis</title>
     @vite('resources/css/app.css')
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 400;
-        }
-
-        /* Style lainnya */
-    </style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+      *{
+        font-family: 'Poppins', sans-serif;
+      }
+      </style>
 </head>
 
 <body>
-    <header class="p-2 xl:px-16">
+    <header class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="rounded-lg navbar bg-base-100 ">
             <div class="navbar-start">
                 <div class="dropdown">

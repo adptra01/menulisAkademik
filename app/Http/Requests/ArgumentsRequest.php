@@ -24,9 +24,10 @@ class ArgumentsRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|min:10',
-            'argument_category_id' => 'required',
+            'title' => 'required|unique:arguments,title|max:255',
+            'argument_category_id' => 'required|exists:argument_categories,id',
             'description' => 'required|min:20',
+            'thumbnail' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
         ];
     }
 }

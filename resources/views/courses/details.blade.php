@@ -171,17 +171,16 @@
                     <div class="sticky top-0 left-0 py-8 lg:pl-4 lg:pl-8">
                         <!-- Avatar Media -->
                         <div
-                            class="flex items-center pb-8 mb-8 border-b border-gray-200 group gap-x-3 dark:border-gray-700">
+                            class="flex items-center pb-8 mb-8 border-b border-black group gap-x-3 dark:border-gray-700">
                             <a class="flex-shrink-0 block" href="#">
-                                <img class="w-10 h-10 rounded-full"
-                                    src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                                <img class="w-10 h-10 rounded-full" src="https://api.dicebear.com/6.x/lorelei/svg"
                                     alt="Image Description">
                             </a>
 
                             <a class="block group grow" href="">
                                 <h5
                                     class="text-sm font-semibold text-gray-800 group-hover:text-gray-600 dark:group-hover:text-gray-400 dark:text-gray-200">
-                                    Leyla Ludic
+                                    Admin
                                 </h5>
                                 <p class="text-sm text-gray-500">
                                     UI/UX enthusiast
@@ -208,54 +207,21 @@
 
                         <div class="space-y-6">
                             <!-- Media -->
-                            <a class="flex items-center group gap-x-6" href="#">
-                                <div class="grow">
-                                    <span
-                                        class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
-                                        5 Reasons to Not start a UX Designer Career in 2022/2023
-                                    </span>
-                                </div>
+                            @foreach ($random as $item)
+                                <a class="flex items-center group gap-x-6" href="#">
+                                    <div class="grow">
+                                        <span
+                                            class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
+                                            {{ $item->title }}
+                                        </span>
+                                    </div>
 
-                                <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
-                                    <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
-                                        src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                                        alt="Image Description">
-                                </div>
-                            </a>
-                            <!-- End Media -->
-
-                            <!-- Media -->
-                            <a class="flex items-center group gap-x-6" href="#">
-                                <div class="grow">
-                                    <span
-                                        class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
-                                        If your UX Portfolio has this 20% Well Done, it Will Give You an 80% Result
-                                    </span>
-                                </div>
-
-                                <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
-                                    <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
-                                        src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                                        alt="Image Description">
-                                </div>
-                            </a>
-                            <!-- End Media -->
-
-                            <!-- Media -->
-                            <a class="flex items-center group gap-x-6" href="#">
-                                <div class="grow">
-                                    <span
-                                        class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
-                                        7 Principles of Icon Design
-                                    </span>
-                                </div>
-
-                                <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
-                                    <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
-                                        src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                                        alt="Image Description">
-                                </div>
-                            </a>
+                                    <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
+                                        <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
+                                            src="{{ storage::url($item->thumbnail) }}" alt="Image Description">
+                                    </div>
+                                </a>
+                            @endforeach
                             <!-- End Media -->
                         </div>
                     </div>

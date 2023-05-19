@@ -45,14 +45,17 @@ class HomeController extends Controller
         
         if ($argument) {
             $details = $argument;
+            $random = Argument::get()->random(3);
         } else if ($academy) {
             $details = $academy;
+            $random = Academy::get()->random(3);
         } else {
             abort(404);
         }
         
         return view('courses.details', [
             'details' => $details,
+            'random' => $random,
         ]);
     }
 

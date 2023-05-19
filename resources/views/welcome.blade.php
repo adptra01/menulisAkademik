@@ -16,10 +16,10 @@
 
                 <!-- text start -->
                 <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
-                    <p class="mb-4 text-lg text-center text-indigo-200 sm:text-xl md:mb-8">Very proud to introduce
+                    <p class="mb-4 text-lg text-center text-indigo-200 sm:text-xl md:mb-8">Kami memperkenalkan
                     </p>
                     <h1 class="mb-8 text-4xl font-bold text-center text-white sm:text-5xl md:mb-12 md:text-6xl">
-                        Revolutionary way to build the web</h1>
+                        Seni Menulis Akademik dan Keterampilan Argumentasi</h1>
 
                     <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
                         <a href="#"
@@ -58,25 +58,15 @@
                 <div class="max-w-xl mb-6">
                     <h2
                         class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                        Let us handle<br class="hidden md:block" />
-                        your next
-                        <span class="inline-block text-deep-purple-accent-400">destination</span>
+                        Apa itu<br class="hidden md:block" />
+                        Seni Menulis Akademik dan Keterampilan Argumentasi ?
+
                     </h2>
                     <p class="text-base text-gray-700 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+                        Seni Menulis Akademik dan Keterampilan Argumentasi merupakan keterampilan penting dalam dunia
+                        akademik yang melibatkan kemampuan untuk menghasilkan tulisan yang jelas, koheren, dan
+                        persuasif.
                     </p>
-                </div>
-                <div>
-                    <a href="/" aria-label=""
-                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                        Learn more
-                        <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-                            <path
-                                d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
-                            </path>
-                        </svg>
-                    </a>
                 </div>
             </div>
             <div class="flex items-center justify-center -mx-4 lg:pl-8">
@@ -113,156 +103,133 @@
                         <rect fill="url(#bebc38d1-bf72-4c77-a073-f0fe5abe0753)" width="52" height="24">
                         </rect>
                     </svg>
-                    <span class="relative">The</span>
+                    <span class="relative">Kenapa</span>
                 </span>
-                quick, brown fox jumps over a lazy dog
+                Seni Menulis Akademik dan Keterampilan Argumentasi Penting ?
             </h2>
             <p class="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam,
-                eaque ipsa quae.
+                Karena seni menulis akademik dan keterampilan argumentasi penting dalam mengembangkan kemampuan berpikir
+                kritis dan menyampaikan ide dengan efektif.
             </p>
         </div>
         <div class="grid gap-8 row-gap-12 lg:grid-cols-2">
             <div class="max-w-md sm:mx-auto sm:text-center">
                 <div
                     class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
-                    <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-20 sm:h-20" stroke="currentColor"
-                        viewBox="0 0 52 52">
+                    <svg class="w-12 h-12 text-base-400 sm:w-20 sm:h-20" stroke="currentColor" viewBox="0 0 52 52">
                         <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
                             points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                     </svg>
                 </div>
-                <h6 class="mb-3 text-xl font-bold leading-5">A business big</h6>
+                <h6 class="mb-3 text-xl font-bold leading-5">Seni Menulis Akademik </h6>
                 <p class="mb-3 text-sm text-gray-900">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium rem aperiam, eaque
-                    ipsa quae. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                    rem aperiam, eaque ipsa quae.
+                    melibatkan kemampuan untuk menghasilkan tulisan yang jelas, terstruktur, dan didukung oleh bukti
+                    yang valid. Ini memungkinkan komunikasi yang efektif dan dapat meningkatkan kemampuan berpikir
+                    kritis.
                 </p>
-                <a href="/" aria-label=""
-                    class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
-                    more</a>
+                <a href="{{ route('courses.academies') }}" aria-label=""
+                    class="inline-flex items-center font-semibold transition-colors duration-200 text-base-400 hover:text-blue-500 ">Lihat
+                    lebih!</a>
             </div>
             <div class="max-w-md sm:mx-auto sm:text-center">
                 <div
                     class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
-                    <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-20 sm:h-20" stroke="currentColor"
-                        viewBox="0 0 52 52">
+                    <svg class="w-12 h-12 text-base-400 sm:w-20 sm:h-20" stroke="currentColor" viewBox="0 0 52 52">
                         <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
                             points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                     </svg>
                 </div>
-                <h6 class="mb-3 text-xl font-bold leading-5">The quick dog</h6>
+                <h6 class="mb-3 text-xl font-bold leading-5">Keterampilan Argumentasi</h6>
                 <p class="mb-3 text-sm text-gray-900">
-                    Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac suscipit leo. Carpe diem vulputate
-                    est nec commodo rutrum. Pellentesque mattis convallis nisi eu and I ain’t stoppin until the
-                    swear jar’s full.
+                    di sisi lain, menggunakan logika yang tepat, dan mendukung pendapat dengan bukti yang meyakinkan.
+                    Ini membantu dalam menyusun pendapat yang persuasif dan mempengaruhi pemikiran orang lain.
                 </p>
-                <a href="/" aria-label=""
-                    class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
-                    more</a>
+                <a href="{{ route('courses.arguments') }}" aria-label=""
+                    class="inline-flex items-center font-semibold transition-colors duration-200 text-base-400 hover:text-blue-500 ">Lihat
+                    lebih!</a>
             </div>
         </div>
     </div>
     <!-- Card Blog -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <!-- Title -->
-        <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">The Blog</h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">See how game-changing companies are making the most of
-                every engagement with Preline.</p>
+        <div class="max-w-2xl mx-auto mb-10 text-center lg:mb-14">
+            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Materi Populer</h2>
+            <p class="mt-1 text-gray-600 dark:text-gray-400">Temukan materi terbaik untuk meningkatkan pengetahuan dan
+                keterampilan Anda.</p>
         </div>
         <!-- End Title -->
-
-        <!-- Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Card -->
-            <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
-                href="#">
-                <div class="aspect-w-16 aspect-h-11">
-                    <img class="w-full object-cover rounded-xl"
-                        src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                        alt="Image Description">
+        <div class="gap-4 carousel rounded-box">
+            @foreach ($random['academies'] as $item)
+                <div class="carousel-item">
+                    <!-- Card -->
+                    <a class="group flex flex-col w-96 h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+                        href="{{ route('details', $item->slug) }}">
+                        <div class="aspect-w-16 aspect-h-11">
+                            <img class="object-cover w-full h-52 rounded-xl"
+                                src="{{ Storage::url($item->thumbnail) }}" alt="Image Description">
+                        </div>
+                        <div class="my-6">
+                            <h3
+                                class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+                                {{ $item->title }}
+                            </h3>
+                            <p class="mt-5 text-gray-600 dark:text-gray-400">
+                                At Wake, our mission has always been focused on bringing openness.
+                            </p>
+                        </div>
+                        <div class="flex items-center mt-auto gap-x-3">
+                            <img class="w-8 h-8 rounded-full"
+                                src="https://api.dicebear.com/6.x/lorelei/svg?seed={{ rand(0, 100) }}"
+                                alt="Image Description">
+                            <div>
+                                <h5 class="text-sm text-gray-800 dark:text-gray-200">By Admin,
+                                    {{ Carbon\carbon::parse($item->created_at)->diffForHumans() }}
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="my-6">
-                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-                        Announcing a free plan for small teams
-                    </h3>
-                    <p class="mt-5 text-gray-600 dark:text-gray-400">
-                        At Wake, our mission has always been focused on bringing openness.
-                    </p>
+            @endforeach
+            @foreach ($random['arguments'] as $item)
+                <div class="carousel-item">
+                    <!-- Card -->
+                    <a class="group flex flex-col w-96 h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
+                        href="{{ route('details', $item->slug) }}">
+                        <div class="aspect-w-16 aspect-h-11">
+                            <img class="object-cover w-full h-52 rounded-xl"
+                                src="{{ Storage::url($item->thumbnail) }}" alt="Image Description">
+                        </div>
+                        <div class="my-6">
+                            <h3
+                                class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+                                {{ $item->title }}
+                            </h3>
+                            <p class="mt-5 text-gray-600 dark:text-gray-400">
+                                At Wake, our mission has always been focused on bringing openness.
+                            </p>
+                        </div>
+                        <div class="flex items-center mt-auto gap-x-3">
+                            <img class="w-8 h-8 rounded-full"
+                                src="https://api.dicebear.com/6.x/lorelei/svg?seed={{ rand(0, 100) }}"
+                                alt="Image Description">
+                            <div>
+                                <h5 class="text-sm text-gray-800 dark:text-gray-200">By Admin,
+                                    {{ Carbon\carbon::parse($item->created_at)->diffForHumans() }}
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="mt-auto flex items-center gap-x-3">
-                    <img class="w-8 h-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                        alt="Image Description">
-                    <div>
-                        <h5 class="text-sm text-gray-800 dark:text-gray-200">By Lauren Waller</h5>
-                    </div>
-                </div>
-            </a>
-            <!-- End Card -->
-
-            <!-- Card -->
-            <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
-                href="#">
-                <div class="aspect-w-16 aspect-h-11">
-                    <img class="w-full object-cover rounded-xl"
-                        src="https://images.unsplash.com/photo-1562851529-c370841f6536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80"
-                        alt="Image Description">
-                </div>
-                <div class="my-6">
-                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-                        How Google Assistant now helps you record stories for kids
-                    </h3>
-                    <p class="mt-5 text-gray-600 dark:text-gray-400">
-                        Google is constantly updating its consumer AI, Google Assistant, with new features.
-                    </p>
-                </div>
-                <div class="mt-auto flex items-center gap-x-3">
-                    <img class="w-8 h-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                        alt="Image Description">
-                    <div>
-                        <h5 class="text-sm text-gray-800 dark:text-gray-200">By Aaron Larsson</h5>
-                    </div>
-                </div>
-            </a>
-            <!-- End Card -->
-
-            <!-- Card -->
-            <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
-                href="#">
-                <div class="aspect-w-16 aspect-h-11">
-                    <img class="w-full object-cover rounded-xl"
-                        src="https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3548&q=80"
-                        alt="Image Description">
-                </div>
-                <div class="my-6">
-                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-                        Front accounts - let's work together
-                    </h3>
-                    <p class="mt-5 text-gray-600 dark:text-gray-400">
-                        Are you an accountant? Are you a company formation advisor?
-                    </p>
-                </div>
-                <div class="mt-auto flex items-center gap-x-3">
-                    <img class="w-8 h-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                        alt="Image Description">
-                    <div>
-                        <h5 class="text-sm text-gray-800 dark:text-gray-200">By Lauren Waller</h5>
-                    </div>
-                </div>
-            </a>
-            <!-- End Card -->
+            @endforeach
         </div>
-        <!-- End Card -->
+
     </div>
     <!-- End Card Blog -->
     <!-- Clients -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <!-- Title -->
-        <div class="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
+        <div class="w-2/3 mx-auto mb-6 text-center sm:w-1/2 lg:w-1/3">
             <h2 class="text-gray-600 dark:text-gray-400">Trusted by Open Source, enterprise, and more than 99,000 of
                 you</h2>
         </div>
@@ -270,14 +237,14 @@
 
         <!-- Grid -->
         <div class="grid grid-cols-3 md:grid-cols-6 gap-x-6">
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24"
                 enable-background="new 0 0 2499 614" viewBox="0 0 2499 614" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="m431.7 0h-235.5v317.8h317.8v-235.5c0-45.6-36.7-82.3-82.3-82.3zm-308.9 0h-40.5c-45.6 0-82.3 36.7-82.3 82.3v40.5h122.8zm-122.8 196.2h122.8v122.8h-122.8zm392.5 317.8h40.5c45.6 0 82.3-36.7 82.3-82.3v-39.2h-122.8zm-196.3-121.5h122.8v122.8h-122.8zm-196.2 0v40.5c0 45.6 36.7 82.3 82.3 82.3h40.5v-122.8zm828-359.6h-48.1v449.4h254.5v-43h-206.4zm360.8 119c-93.7 0-159.5 69.6-159.5 169.6v11.5c1.3 43 20.3 83.6 51.9 113.9 30.4 27.9 69.6 44.3 111.4 44.3h6.3c44.3 0 86.1-16.5 119-44.3l1.3-1.3-21.5-35.4-2.5 1.3c-26.6 24.1-59.5 38-94.9 38-58.2 0-117.7-38-121.5-122.8h243.1v-2.5s1.3-15.2 1.3-22.8c-.3-91.2-53.4-149.5-134.4-149.5zm-108.9 134.2c10.1-57 51.9-93.7 106.3-93.7 40.5 0 84.8 24.1 88.6 93.7zm521.6-96.2v16.5c-20.3-34.2-58.2-55.7-97.5-55.7h-3.8c-86.1 0-145.6 68.4-145.6 168.4 0 101.3 57 169.6 141.8 169.6 67.1 0 97.5-40.5 107.6-58.2v49.4h45.6v-447h-46.8v157zm-98.8 257c-59.5 0-98.7-50.6-98.7-126.6 0-73.4 41.8-125.3 100-125.3 49.4 0 98.7 39.2 98.7 125.3 0 93.7-51.9 126.6-100 126.6zm424.1-250.7v2.5c-8.9-15.2-36.7-48.1-103.8-48.1-84.8 0-140.5 64.6-140.5 163.3s58.2 165.8 144.3 165.8c46.8 0 78.5-16.5 100-50.6v44.3c0 62-39.2 97.5-108.9 97.5-29.1 0-59.5-7.6-86.1-21.5l-2.5-1.3-17.7 39.2 2.5 1.3c32.9 16.5 69.6 25.3 105.1 25.3 74.7 0 154.4-38 154.4-143.1v-311.3h-46.8zm-93.7 241.8c-62 0-102.5-48.1-102.5-122.8 0-76 35.4-119 96.2-119 67.1 0 98.7 39.2 98.7 119 1.3 78.5-31.6 122.8-92.4 122.8zm331.7-286.1c-93.7 0-158.2 69.6-158.2 168.4v11.4c1.3 43 20.3 83.6 51.9 113.9 30.4 27.9 69.6 44.3 111.4 44.3h6.3c44.3 0 86.1-16.5 119-44.3l1.3-1.3-22.8-35.4-2.5 1.3c-26.6 24.1-59.5 38-94.9 38-58.2 0-117.7-38-121.5-122.8h244.2v-2.5s1.3-15.2 1.3-22.8c0-89.9-53.2-148.2-135.5-148.2zm-107.6 134.2c10.1-57 51.9-93.7 106.3-93.7 40.5 0 84.8 24.1 88.6 93.7zm440.6-127.9c-6.3-1.3-11.4-1.3-17.7-2.5-44.3 0-81 27.9-100 74.7v-72.2h-46.8l1.3 320.3v2.5h48.1v-135.4c0-20.3 2.5-41.8 8.9-60.8 15.2-49.4 49.4-81 89.9-81 5.1 0 10.1 0 15.2 1.3h2.5v-46.8z"
                     fill="currentColor" />
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="-4.126838974812941 0.900767442746961 939.436838974813 230.18142889845947" width="2500"
                 height="607">
@@ -286,7 +253,7 @@
                     fill="currentColor" />
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500" fill="none"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24" fill="none"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2428 1002">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M311.5 389.8h191.8l67 117.5 77.8-117.5h178.3L682.7 590.7l154 220.7H648.1l-77.8-135.8-91.7 135.8h-175l153.2-220.7-145.3-200.9Z"
@@ -302,7 +269,7 @@
                     fill="currentColor" />
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24"
                 viewBox="0 -8.881784197001252e-16 267.51517722360785 65.24679557585003"
                 xmlns="http://www.w3.org/2000/svg" width="2500" height="610">
                 <path
@@ -310,7 +277,7 @@
                     fill="currentColor" />
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500" fill="none"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24" fill="none"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 33">
                 <path d="M9.3 16.5C9.3 9 14.3 2.7 21.2.7a16.5 16.5 0 1 0 0 31.6c-6.9-2-11.9-8.3-11.9-15.8Z"
                     fill="currentColor" />
@@ -323,7 +290,7 @@
                     fill="currentColor" />
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500" fill="none"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24" fill="none"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32">
                 <g clip-path="url(#a)">
                     <path
@@ -339,7 +306,7 @@
 
         <!-- Grid -->
         <div class="grid grid-cols-3 md:grid-cols-5 gap-x-6 sm:gap-x-6">
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24"
                 xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 88 22"
                 xml:space="preserve" enable-background="new 0 0 88 22">
                 <path
@@ -358,14 +325,14 @@
                     fill="currentColor" />
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500" fill="none"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24" fill="none"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151 32">
                 <path
                     d="M.7 7.6v7.6h15.1V0H.7v7.6ZM17.4 0v15.2h15.1V0H17.4ZM139.3 5.1a5 5 0 0 0-3 2.2c-.6 1-.8 1.8-.8 3.2v1.3h-2.2v1.4l-.1 1.3h2.3v11.1h3.3V14.5h4.8V18c0 4.2.1 5 .6 6 .4.9 1.1 1.5 2 1.7a8 8 0 0 0 3.2 0l.7-.3v-2.6l-.6.2c-1 .4-2 .2-2.4-.6-.1-.3-.2-.8-.2-4.2v-3.7h3.2v-2.7H147v-4h-.3l-1.7.6-1.3.4v3.1h-2.4l-2.4-.1v-1.4c0-1.5.2-2 .9-2.4.4-.3 1.4-.4 2-.1l.6.1V6.7c0-1.2 0-1.4-.2-1.5-.3-.1-2.3-.2-2.8 0ZM66.6 6.3c-.6.4-1 .9-1 1.6 0 1.1 1 1.9 2.2 1.8 1-.1 1.7-.8 1.7-1.8 0-.7-.2-1.1-.9-1.6-.5-.3-1.5-.3-2 0ZM42.1 16v9.6h3.2V10.9l3 7.3 3 7.4h2.3l2.9-7.4 3-7.3v14.7h3.3V6.4h-4.5L55.6 13l-2.9 7-.2.6-1-2.6-2.8-7-1.8-4.6H42V16ZM76.8 11.7a6.8 6.8 0 0 0-5 4.7c-.4 1-.5 3.3-.2 4.4a6.8 6.8 0 0 0 3.2 4.3c1.8 1 4.5 1 6.5.2l.7-.2v-3l-.7.4c-2 1-4.1.9-5.4-.5-1-1-1.3-2.4-1-4.1a4 4 0 0 1 2.4-3.4 5 5 0 0 1 4.3.5l.5.3v-3.1l-.8-.3c-1-.3-3.4-.4-4.5-.2ZM90.7 11.7c-1.1.2-2 .8-2.6 2l-.3.5v-2.4h-3.2v13.8h3.2V17l.4-.7c.5-1 1-1.6 2-1.8a4 4 0 0 1 2 .3l.4.2v-1.6c0-1.1 0-1.6-.2-1.7a4 4 0 0 0-1.7-.1ZM98 11.7a6.4 6.4 0 0 0-5 5c-.3 1-.3 3.1 0 4.3.5 2.3 2.3 4 4.6 4.7 1 .2 3 .2 4.1 0 2.1-.6 3.8-2 4.5-4 .5-1.1.7-2.4.6-3.7a6.6 6.6 0 0 0-1.9-4.6c-.7-.8-1.3-1.1-2.4-1.5-.9-.3-3.5-.4-4.5-.2Zm3.4 2.8c.8.4 1.5 1.2 1.8 2 .1.6.2 1 .2 2.3 0 1.4 0 1.7-.3 2.3-.3.8-.8 1.4-1.6 1.8-.5.2-.7.3-1.6.3-1.2 0-1.8-.2-2.5-.8-1.1-1-1.6-3.2-1.2-5.2.4-1.4 1-2.2 2-2.7.9-.4 2.4-.4 3.2 0ZM111.8 11.7a4.9 4.9 0 0 0-3.1 2.5c-.4.8-.4 2.4 0 3.3.5 1 1 1.4 3 2.4L114 21c.3.3.4 1.2.1 1.6-.7 1-3.1 1-5-.2l-.7-.4V25l.5.2c1.3.5 3.8.7 5.1.3a4.6 4.6 0 0 0 3.2-2.3c.2-.5.3-.8.3-1.7 0-1 0-1.2-.3-1.6-.6-1-1.3-1.7-3.4-2.6-1.5-.7-2-1-2-1.7-.3-1.6 2.1-2.1 4.5-1l.6.4v-1.5l-.1-1.5-.7-.2a11 11 0 0 0-4.2-.2ZM124 11.8c-1.7.4-3.2 1.4-4 2.7a9 9 0 0 0-.6 7.3c1 2.8 4 4.4 7.4 4 1.9-.2 3-.7 4.1-2 1.5-1.3 2-2.8 2-5.2 0-2.4-.5-4-1.8-5.2a5.6 5.6 0 0 0-2.9-1.6c-1.1-.3-3.1-.3-4.3 0Zm3.7 2.8c.6.3 1.2 1 1.6 1.8.2.6.2 1 .2 2.2 0 2.4-.5 3.5-1.8 4.2-.6.3-.8.4-1.7.4-1.3 0-2-.3-2.7-1-.8-1-1-1.7-1-3.4 0-2.3.5-3.5 2-4.2.6-.4.7-.4 1.8-.3.8 0 1.2 0 1.6.3ZM66 18.7v6.9h3.2V11.9h-1.6l-1.7-.1v6.9ZM.7 24.4V32h15.1V16.8H.7v7.6ZM17.4 24.4v7.5H25l7.5.1V16.8H17.4v7.6Z"
                     fill="currentColor" />
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500" fill="none"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24" fill="none"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107 32">
                 <g clip-path="url(#a)" fill="currentColor">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -377,7 +344,7 @@
                 </g>
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24"
                 xmlns="http://www.w3.org/2000/svg" width="2500" height="1036" viewBox="0 -6.166 294.398 121.975">
                 <path
                     d="M12.139 90.511c-3.939 0-7.799-.479-10.938-1.292l.487-8.277c3.053 1.123 7.313 2.012 11.254 2.012 5.952 0 10.775-2.492 10.775-8.359C23.718 63.172 0 68.002 0 50.466c0-9.325 7.315-15.834 19.941-15.834 3.214 0 6.51.397 9.809.959l-.485 7.802c-3.132-.963-6.591-1.527-9.806-1.527-6.754 0-10.211 3.134-10.211 7.638 0 10.855 23.72 6.839 23.72 23.798-.005 9.973-7.882 17.209-20.829 17.209M54.106 90.264c-2.249 0-3.938-.076-6.03-.479v17.397h-8.601V49.746h8.12c0 2.094-.082 5.309-.484 7.476h.162c2.25-5.068 6.833-8.283 12.944-8.283 9.487 0 14.712 6.75 14.712 18.814.001 14.076-7.473 22.511-20.823 22.511m3.861-34.246c-6.434 0-9.892 7.558-9.892 14.384v12.312c1.852.562 3.86.804 6.272.804 6.833 0 11.497-4.182 11.497-14.958.001-8.039-2.49-12.542-7.877-12.542zM102.519 57.381C94.561 55.936 90.7 61.485 90.7 73.466v16.238h-8.606V49.746H90.3c0 2.246-.246 5.791-.809 8.844h.162c1.771-5.388 5.79-10.377 13.271-9.651l-.405 8.442M114.803 43.797c-3.056 0-5.55-2.414-5.55-5.393 0-2.971 2.494-5.385 5.55-5.385 2.974 0 5.467 2.333 5.467 5.385 0 2.979-2.493 5.393-5.467 5.393m4.26 45.907h-8.6V49.746h8.6v39.958zM154.449 89.704V63.975c0-4.982-1.374-7.875-5.951-7.875-6.03 0-10.457 6.345-10.457 14.302v19.303h-8.603V49.746h8.203c0 2.094-.162 5.546-.563 7.796l.082.075c2.33-5.141 7.157-8.68 13.91-8.68 9.084 0 11.9 5.711 11.9 12.787v27.979h-8.521M186.675 90.425c-8.524 0-11.1-3.294-11.1-12.214V56.417h-7.634v-6.671h7.634V37.04l8.523-2.333v15.039h10.532v6.671h-10.448v19.137c0 5.954 1.205 7.558 5.224 7.558 1.769 0 3.699-.24 5.226-.643v7.076c-2.331.486-5.307.88-7.957.88"
@@ -393,7 +360,7 @@
                     fill="currentColor" />
             </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-500" width="2500" height="728"
+            <svg class="w-16 h-auto py-3 mx-auto text-gray-500 lg:py-5 md:w-20 lg:w-24" width="2500" height="728"
                 viewBox="0 0 512 149" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M.06 27.679h17.852v39.662h37.651V27.679h17.875v97.358H55.563V84.542H17.912v40.495H.06V27.679zM129.993 93.326c0 8.15-6.64 14.782-14.788 14.782-8.151 0-14.787-6.632-14.787-14.782V51.41h-16.93v41.916c0 17.487 14.229 31.711 31.717 31.711 17.484 0 31.712-14.224 31.712-31.711V51.41h-16.924v41.916M194.179 51.901c-8.398 0-14.26 2.437-19.921 7.994V27.679h-16.985v59.705c0 22.348 16.158 37.653 34.311 37.653 20.181 0 37.863-15.578 37.863-36.567 0-20.723-16.305-36.569-35.268-36.569zm.422 57.423c-11.509 0-20.31-9.612-20.31-20.854 0-11.244 8.801-20.859 20.31-20.859 9.752 0 18.558 9.615 18.558 20.859 0 11.242-8.806 20.854-18.558 20.854zM257.974 56.18c0-8.538 5.689-11.245 11.917-11.245 5.014 0 11.649 3.792 15.979 8.398l11.103-13.001c-5.549-7.448-16.788-12.596-25.998-12.596-18.421 0-31.694 10.7-31.694 28.444 0 32.91 40.497 22.478 40.497 40.902 0 5.682-5.551 10.698-11.913 10.698-10.026 0-13.278-4.876-17.881-10.024l-12.327 12.729c7.86 9.617 17.608 14.495 29.257 14.495 17.47 0 31.556-10.835 31.556-27.767 0-36.566-40.496-25.188-40.496-41.033M343.184 50.947c-18.151 0-34.311 15.296-34.311 37.649v59.859h16.984v-32.369c5.662 5.553 11.521 7.994 19.922 7.994 18.962 0 35.269-15.844 35.269-36.567 0-20.992-17.687-36.566-37.864-36.566zm3.018 57.425c-11.508 0-20.31-9.625-20.31-20.859 0-11.244 8.802-20.859 20.31-20.859 9.75 0 18.557 9.615 18.557 20.859 0 11.234-8.807 20.859-18.557 20.859zM506.069 109.324c-10.018 0-12.862-4.332-12.862-10.971V68.965h15.572V54.069h-15.572v-19.64l-17.195 7.718v59.863c0 15.306 10.56 23.027 25.045 23.027 2.167 0 5.15-.14 6.777-.541l4.199-15.438c-1.896.131-4.062.266-5.964.266"

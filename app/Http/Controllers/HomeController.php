@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Academy;
 use App\Models\Argument;
+use App\Models\ArgumentCategory;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -32,9 +33,22 @@ class HomeController extends Controller
     }
     public function arguments()
     {
+        $categories = ArgumentCategory::get();
+        $arguments = [];
+
+        foreach ($categories as $category) {
+            $arguments[$category->name] = [
+                'description' => $category->description,
+                'arguments' => $category->arguments()->inRandomOrder()->limit(3)->get(),
+            ];
+        }
+
+        // dd($arguments);
+
         return view('courses.arguments', [
-            'arguments' => Argument::latest()->get()
-        ]);
+            'arguments' => $arguments,
+]);
+
     }
 
     public function details($slug)
@@ -42,20 +56,20 @@ class HomeController extends Controller
         $details = null;
         $argument = Argument::where('slug', $slug)->first();
         $academy = Academy::where('slug', $slug)->first();
-        
+        $randArguments = Argument::inRandomOrder()->limit(3)->get();
+        $randAcadmies = Academy::inRandomOrder()->limit(3)->get();
         if ($argument) {
             $details = $argument;
-            $random = Argument::get()->random(3);
         } else if ($academy) {
             $details = $academy;
-            $random = Academy::get()->random(3);
         } else {
             abort(404);
         }
         
         return view('courses.details', [
             'details' => $details,
-            'random' => $random,
+            'randArguments' => $randArguments,
+            'randAcadmies' => $randAcadmies,
         ]);
     }
 

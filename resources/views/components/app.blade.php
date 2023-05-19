@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? '' }} Page - Akademik Menulis</title>
+    <script src="https://kit.fontawesome.com/21fb7efcbe.js" crossorigin="anonymous"></script>
     @vite('resources/css/app.css')
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-      *{
-        font-family: 'Poppins', sans-serif;
-      }
-      </style>
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
                         <li><a href="{{ Route('courses.academies') }}">Menulis Akademik</a></li>
                     </ul>
                 </div>
-                <a class="text-xl normal-case btn btn-ghost text-primary">Menulis</a>
+                <a href="/" class="text-xl normal-case btn btn-ghost text-primary">Menulis</a>
             </div>
             <div class="hidden navbar-center lg:flex">
                 <ul class="px-1 menu menu-horizontal">
@@ -43,7 +45,8 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn btn-primary">Get started</a>
+                <a href="https://api.whatsapp.com/send/?phone=085266113072&text&type=phone_number&app_absent=0"
+                    class="btn btn-primary">Get started</a>
             </div>
         </div>
     </header>
@@ -62,16 +65,17 @@
                         <rect x="14" y="1" width="7" height="6"></rect>
                         <rect x="14" y="11" width="7" height="12"></rect>
                     </svg>
-                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Menulis</span>
                 </a>
                 <div class="mt-4 lg:max-w-sm">
                     <p class="text-sm text-gray-800">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam.
+                        Menulis Akademik dan Ketrampilan Argumentasi adalah kunci untuk mengungkapkan ide-ide secara
+                        jelas dan persuasif. Di sini, kami memberikan panduan dan sumber daya yang berharga untuk
+                        meningkatkan kemampuan menulis akademik Anda serta mengasah ketrampilan argumentasi yang kuat.
                     </p>
                     <p class="mt-4 text-sm text-gray-800">
-                        Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.
+                        Bersama-sama, kita akan mengembangkan keahlian yang diperlukan untuk sukses dalam dunia akademik
+                        dan berkomunikasi dengan efektif.
                     </p>
                 </div>
             </div>

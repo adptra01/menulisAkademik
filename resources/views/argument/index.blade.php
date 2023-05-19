@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-sm-7">
                         <div class="text-center card-body text-sm-start ps-sm-0">
-                            <a class="btn btn-primary mb-3" href="{{ Route('argumentCategory') }}">Kategori Argumen</a>
+                            <a class="mb-3 btn btn-primary" href="{{ Route('argumentCategory') }}">Kategori Argumen</a>
                             <p class="mb-0">Add role, if it does not exist</p>
                         </div>
                     </div>

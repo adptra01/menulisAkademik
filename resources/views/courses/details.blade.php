@@ -8,7 +8,8 @@
                 <div class="lg:col-span-2">
                     <div class="py-8 lg:pr-4 lg:pr-8">
                         <div class="space-y-5 lg:space-y-8">
-                            <img src="{{ Storage::url($details->thumbnail) }}" alt="thumbnail">
+                            <img src="{{ Storage::url($details->thumbnail) }}" class="object-cover w-11/12 h-96"
+                                alt="thumbnail">
 
                             <h2 class="text-3xl font-bold lg:text-4xl lg:text-5xl dark:text-white">{{ $details->title }}
                             </h2>
@@ -16,11 +17,12 @@
                             <div class="flex items-center gap-x-5">
                                 <a class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-800 dark:text-gray-200"
                                     href="#">
-                                    @if (!$details->argumentCategory->name)
-                                        Menulis Akademik
-                                    @else
+                                    @if (isset($details->argumentCategory->name))
                                         {{ $details->argumentCategory->name }}
+                                    @else
+                                        Menulis Akademik
                                     @endif
+
                                 </a>
                                 <p class="text-xs text-gray-800 sm:text-sm dark:text-gray-200">
                                     {{ Carbon\carbon::parse($details->created_at)->format('M d, Y') }}</p>
@@ -34,32 +36,7 @@
                                 @endif
                             </article>
 
-
-
-
-
                             <div class="grid lg:flex lg:justify-between lg:items-center gap-y-5 lg:gap-y-0">
-                                <!-- Badges/Tags -->
-                                <div>
-                                    <a class="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200"
-                                        href="#">
-                                        Plan
-                                    </a>
-                                    <a class="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200"
-                                        href="#">
-                                        Web development
-                                    </a>
-                                    <a class="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200"
-                                        href="#">
-                                        Free
-                                    </a>
-                                    <a class="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200"
-                                        href="#">
-                                        Team
-                                    </a>
-                                </div>
-                                <!-- End Badges/Tags -->
-
                                 <div class="flex justify-end items-center gap-x-1.5">
                                     <!-- Button -->
                                     <div class="inline-block hs-tooltip">
@@ -167,53 +144,60 @@
 
                 <!-- Sidebar -->
                 <div
-                    class="lg:col-span-1 lg:w-full lg:h-full lg:bg-gradient-to-r lg:from-gray-50 lg:via-transparent lg:to-transparent dark:from-slate-800">
+                    class="lg:col-span-1 lg:w-full lg:h-full lg:bg-gradient-to-r lg:from-base-200 lg:via-transparent lg:to-transparent dark:from-slate-800">
                     <div class="sticky top-0 left-0 py-8 lg:pl-4 lg:pl-8">
                         <!-- Avatar Media -->
-                        <div
-                            class="flex items-center pb-8 mb-8 border-b border-black group gap-x-3 dark:border-gray-700">
+                        <div class="flex items-center p-4 mb-4 rounded-lg group gap-x-3 bg-gradient-to-r from-blue-700">
                             <a class="flex-shrink-0 block" href="#">
-                                <img class="w-10 h-10 rounded-full" src="https://api.dicebear.com/6.x/lorelei/svg"
+                                <img class="w-10 h-10 rounded-full"
+                                    src="https://api.dicebear.com/6.x/lorelei/svg?seed={{ rand(0, 100) }}"
                                     alt="Image Description">
                             </a>
 
                             <a class="block group grow" href="">
-                                <h5
-                                    class="text-sm font-semibold text-gray-800 group-hover:text-gray-600 dark:group-hover:text-gray-400 dark:text-gray-200">
-                                    Admin
+                                <h5 class="text-sm font-semibold text-white">
+                                    Author
                                 </h5>
-                                <p class="text-sm text-gray-500">
-                                    UI/UX enthusiast
+                                <p class="text-sm text-white">
+                                    Admin
                                 </p>
                             </a>
-
-                            <div class="grow">
-                                <div class="flex justify-end">
-                                    <button type="button"
-                                        class="py-1.5 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-full border border-transparent font-semibold bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 text-xs">
-                                        <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16"
-                                            height="16" fill="currentColor" viewBox="0 0 16 16">
-                                            <path
-                                                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                            <path fill-rule="evenodd"
-                                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
-                                        </svg>
-                                        Follow
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                         <!-- End Avatar Media -->
 
                         <div class="space-y-6">
+                            <h3 class="p-0 m-0 font-bold underline underline-offset-8">Menulis Akademik</h3>
                             <!-- Media -->
-                            @foreach ($random as $item)
-                                <a class="flex items-center group gap-x-6" href="#">
+                            @foreach ($randAcadmies as $item)
+                                <a class="flex items-center group gap-x-6" href="{{ Route('details', $item->slug) }}">
                                     <div class="grow">
                                         <span
                                             class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
                                             {{ $item->title }}
                                         </span>
+                                        <p class="pt-2 text-sm">
+                                            {{ Carbon\carbon::parse($item->created_at)->diffForHumans() }}</p>
+                                    </div>
+
+                                    <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">
+                                        <img class="absolute top-0 left-0 object-cover w-full h-full rounded-lg"
+                                            src="{{ storage::url($item->thumbnail) }}" alt="Image Description">
+                                    </div>
+                                </a>
+                            @endforeach
+                            <!-- End Media -->
+                            <h3 class="p-0 m-0 font-bold underline underline-offset-8">Menulis Argument</h3>
+                            <!-- Media -->
+                            @foreach ($randArguments as $item)
+                                <a class="flex items-center group gap-x-6"
+                                    href="{{ Route('details', $item->slug) }}">
+                                    <div class="grow">
+                                        <span
+                                            class="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
+                                            {{ $item->title }}
+                                        </span>
+                                        <p class="pt-2 text-sm">
+                                            {{ Carbon\carbon::parse($item->created_at)->diffForHumans() }}</p>
                                     </div>
 
                                     <div class="relative flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg">

@@ -5,6 +5,7 @@ use App\Http\Controllers\ArgumentCategoryController;
 use App\Http\Controllers\ArgumentController;
 use App\Http\Controllers\HomeController;
 use App\Models\Academy;
+use App\Models\Argument;
 use App\Models\ArgumentCategory;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -26,9 +27,16 @@ Auth::routes();
 
 
 Route::get('/', function () {
-    return view('welcome' , [
-        'academies' => Academy::limit(6)->get()
+    $arguments = Argument::inRandomOrder()->limit(3)->get();
+    $academies = Academy::inRandomOrder()->limit(3)->get();
+
+    return view('welcome', [
+        'random' => [
+            'academies' => $academies,
+            'arguments' => $arguments,
+        ],
     ]);
+
 });
 Route::get('/courses-academies', [HomeController::class, 'academies'])->name('courses.academies');
 Route::get('/courses-arguments', [HomeController::class, 'arguments'])->name('courses.arguments');

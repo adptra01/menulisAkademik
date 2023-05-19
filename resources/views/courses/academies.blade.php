@@ -5,10 +5,7 @@
             <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
                 <a href="/" class="mb-6 sm:mx-auto">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                        <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
+                        <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                 </a>
                 <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl">
@@ -26,13 +23,15 @@
                                 <rect fill="url(#e77df901-b9d7-4b9b-822e-16b2d410795b)" width="52" height="24">
                                 </rect>
                             </svg>
-                            <span class="relative">The</span>
+                            <span class="relative">Keajaiban</span>
                         </span>
-                        quick, brown fox jumps over a lazy dog
+                        dari Menulis Akademik
                     </h2>
                     <p class="text-base text-gray-700 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem
-                        aperiam, eaque ipsa quae.
+                        Temukan keajaiban kata-kata yang mampu menginspirasi, mempengaruhi, dan menyampaikan gagasan
+                        secara mendalam. Lengkapi ketrampilan Anda dalam menulis karya akademik yang berbobot dan
+                        memikat hati pembaca. Bersiaplah untuk menjelajahi teknik penulisan yang kreatif, struktur yang
+                        solid, dan pendekatan yang cerdas dalam menyampaikan ide.
                     </p>
                 </div>
             </div>

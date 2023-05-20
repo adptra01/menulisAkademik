@@ -43,9 +43,8 @@
         <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 mx-auto">
             <!-- Title -->
             <div class="max-w-2xl mb-10">
-                <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Customer stories</h2>
-                <p class="mt-1 text-gray-600 dark:text-gray-400">See how game-changing companies are making the most of
-                    every engagement with Preline.</p>
+                <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Menulis Akademik</h2>
+                <p class="mt-1 text-gray-600 dark:text-gray-400">Menulis akademik adalah proses menyusun tulisan yang memiliki ciri khas ilmiah dan berfokus pada penelitian, analisis, dan argumen yang didasarkan pada bukti dan referensi yang akurat.</p>
             </div>
             <!-- End Title -->
 

@@ -31,20 +31,45 @@
         </a>
     </li>
 
-    <!-- Personil -->
+    <!-- Team -->
     <li class="menu-item">
-        <a href="{{ route('personil') }}" class="menu-link">
-            <i class="menu-icon tf-icons bx bx-book-reader"></i>
-            <div data-i18n="argument">Personil</div>
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+            <div><i class="menu-icon tf-icons bx bxs-group"></i> Team</div>
         </a>
+        <ul class="menu-sub">
+            <li class="menu-item">
+                <a href="{{ route('personil') }}" class="menu-link">
+                    <div>Personils Team</div>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ route('tutor') }}" class="menu-link">
+                    <div>Tutors Team</div>
+                </a>
+            </li>
+        </ul>
     </li>
-
-    <!-- tutor -->
+    <!-- Team -->
     <li class="menu-item">
-        <a href="{{ route('tutor') }}" class="menu-link">
-            <i class="menu-icon tf-icons bx bx-book-reader"></i>
-            <div data-i18n="argument">Tutor</div>
+        <a href="javascript:void(0)" class="menu-link menu-toggle">
+            <div><i class="menu-icon tf-icons bx bx-detail"></i> Detail Website</div>
         </a>
+        <ul class="menu-sub">
+            <li class="menu-item">
+                <a href="{{ route('about') }}" class="menu-link">
+                    <div>Tentang</div>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-link">
+                    <div>Jasa</div>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-link">
+                    <div>Pedoman</div>
+                </a>
+            </li>
+        </ul>
     </li>
-
 </ul>

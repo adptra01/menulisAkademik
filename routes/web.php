@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\ArgumentCategoryController;
 use App\Http\Controllers\ArgumentController;
@@ -91,4 +92,10 @@ Route::prefix('personils')->group(function () {
     route::get('/{slug}', [PersonilController::class, 'show'])->name('personil.show');
     route::put('/{slug}', [PersonilController::class, 'update'])->name('personil.update');
     route::delete('/{slug}', [PersonilController::class, 'destroy'])->name('personil.destroy');
+});
+
+Route::prefix('about')->group(function () {
+    Route::get('/', [AboutController::class, 'index'])->name('about');
+    Route::put('/{id}', [AboutController::class, 'update'])->name('about.update');
+    
 });

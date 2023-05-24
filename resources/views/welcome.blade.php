@@ -5,31 +5,26 @@
             <section
                 class="relative flex items-center justify-center flex-1 py-16 overflow-hidden bg-gray-100 rounded-lg shadow-lg min-h-96 shrink-0 md:py-20 xl:py-48">
                 <!-- image - start -->
-                <img src="https://images.unsplash.com/photo-1618004652321-13a63e576b80?auto=format&q=75&fit=crop&w=1500"
-                    loading="lazy" alt="Photo by Fakurian Design"
-                    class="absolute inset-0 object-cover object-center w-full h-full" />
+                <img src="/assets/img/logo-unja.svg" loading="lazy" alt="Photo by Fakurian Design"
+                    class="absolute mx-auto inset-0 object-cover object-center w-full h-full" />
                 <!-- image - end -->
 
                 <!-- overlay - start -->
-                <div class="absolute inset-0 bg-indigo-500 mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-secondary mix-blend-multiply"></div>
                 <!-- overlay - end -->
 
                 <!-- text start -->
                 <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
-                    <p class="mb-4 text-lg font-semibold text-center text-indigo-200 sm:text-xl md:mb-8">Kami
+                    <p class="mb-4 text-lg font-semibold text-center text-white sm:text-xl md:mb-8">Kami
                         memperkenalkan
                     </p>
                     <h1 class="mb-8 text-4xl font-bold text-center text-white sm:text-5xl md:mb-12 md:text-6xl">
                         Seni Menulis Akademik dan Keterampilan Argumentasi</h1>
 
                     <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
-                        <a href="#"
-                            class="inline-block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-indigo-500 rounded-lg outline-none ring-indigo-300 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Start
+                        <a href="#start"
+                            class="inline-block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-black rounded-lg outline-none ring-indigo-300 hover:bg-orange-400 focus-visible:ring md:text-base ">Start
                             now</a>
-
-                        <a href="#"
-                            class="inline-block px-8 py-3 text-sm font-semibold text-center text-gray-500 transition duration-100 bg-gray-200 rounded-lg outline-none ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Take
-                            tour</a>
                     </div>
                 </div>
                 <!-- text end -->
@@ -39,7 +34,7 @@
 
     <!-- feature -->
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div class="grid gap-10 lg:grid-cols-2">
+        <div class="grid gap-10 lg:grid-cols-2" id="start">
             <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
                 <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
                     <svg class="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
@@ -116,8 +111,8 @@
         <div class="grid gap-8 row-gap-12 lg:grid-cols-2">
             <div class="max-w-md sm:mx-auto sm:text-center">
                 <div
-                    class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
-                    <i class="text-4xl fa-solid fa-graduation-cap"></i>
+                    class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gray-300 sm:mx-auto sm:w-24 sm:h-24">
+                    <i class="text-4xl fa-solid text-black fa-graduation-cap"></i>
                 </div>
                 <h6 class="mb-3 text-xl font-bold leading-5">Seni Menulis Akademik </h6>
                 <p class="mb-3 text-sm text-gray-900">
@@ -126,13 +121,13 @@
                     kritis.
                 </p>
                 <a href="{{ route('courses.academies') }}" aria-label=""
-                    class="inline-flex items-center font-semibold transition-colors duration-200 text-base-400 hover:text-blue-500 ">Lihat
+                    class="inline-flex items-center font-semibold transition-colors duration-200 text-secondary">Lihat
                     lebih!</a>
             </div>
             <div class="max-w-md sm:mx-auto sm:text-center">
                 <div
-                    class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
-                    <i class="text-4xl fa-solid fa-blog"></i>
+                    class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gray-300 sm:mx-auto sm:w-24 sm:h-24">
+                    <i class="text-4xl fa-solid text-black fa-blog"></i>
                 </div>
                 <h6 class="mb-3 text-xl font-bold leading-5">Keterampilan Argumentasi</h6>
                 <p class="mb-3 text-sm text-gray-900">
@@ -140,108 +135,116 @@
                     Ini membantu dalam menyusun pendapat yang persuasif dan mempengaruhi pemikiran orang lain.
                 </p>
                 <a href="{{ route('courses.arguments') }}" aria-label=""
-                    class="inline-flex items-center font-semibold transition-colors duration-200 text-base-400 hover:text-blue-500 ">Lihat
+                    class="inline-flex items-center font-semibold transition-colors duration-200 text-secondary">Lihat
                     lebih!</a>
             </div>
         </div>
     </div>
-    <!-- Card Blog -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <!-- Title -->
-        <div class="max-w-2xl mx-auto mb-10 text-center lg:mb-14">
-            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Materi Populer</h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">Temukan materi terbaik untuk meningkatkan pengetahuan dan
-                keterampilan Anda.</p>
-        </div>
-        <!-- End Title -->
-        <div class="gap-4 carousel rounded-box">
-            @foreach ($random['academies'] as $item)
-                <div class="carousel-item">
-                    <!-- Card -->
-                    <a class="group flex flex-col w-96 h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
-                        href="{{ route('details', $item->slug) }}">
-                        <div class="aspect-w-16 aspect-h-11">
-                            <img class="object-cover w-full h-52 rounded-xl"
-                                src="{{ Storage::url($item->thumbnail) }}" alt="Image Description">
-                        </div>
-                        <div class="my-6">
-                            <h3
-                                class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-                                {{ $item->title }}
-                            </h3>
-                            <p class="mt-5 text-gray-600 dark:text-gray-400">
-                                At Wake, our mission has always been focused on bringing openness.
-                            </p>
-                        </div>
-                        <div class="flex items-center mt-auto gap-x-3">
-                            <img class="w-8 h-8 rounded-full"
-                                src="https://api.dicebear.com/6.x/lorelei/svg?seed={{ rand(0, 100) }}"
-                                alt="Image Description">
-                            <div>
-                                <h5 class="text-sm text-gray-800 dark:text-gray-200">By Admin,
-                                    {{ Carbon\carbon::parse($item->created_at)->diffForHumans() }}
-                                </h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            @endforeach
-            @foreach ($random['arguments'] as $item)
-                <div class="carousel-item">
-                    <!-- Card -->
-                    <a class="group flex flex-col w-96 h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4]"
-                        href="{{ route('details', $item->slug) }}">
-                        <div class="aspect-w-16 aspect-h-11">
-                            <img class="object-cover w-full h-52 rounded-xl"
-                                src="{{ Storage::url($item->thumbnail) }}" alt="Image Description">
-                        </div>
-                        <div class="my-6">
-                            <h3
-                                class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
-                                {{ $item->title }}
-                            </h3>
-                            <p class="mt-5 text-gray-600 dark:text-gray-400">
-                                At Wake, our mission has always been focused on bringing openness.
-                            </p>
-                        </div>
-                        <div class="flex items-center mt-auto gap-x-3">
-                            <img class="w-8 h-8 rounded-full"
-                                src="https://api.dicebear.com/6.x/lorelei/svg?seed={{ rand(0, 100) }}"
-                                alt="Image Description">
-                            <div>
-                                <h5 class="text-sm text-gray-800 dark:text-gray-200">By Admin,
-                                    {{ Carbon\carbon::parse($item->created_at)->diffForHumans() }}
-                                </h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            @endforeach
-        </div>
 
-    </div>
-    <!-- End Card Blog -->
-    <!-- Clients -->
+
+    <!-- Team -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <!-- Title -->
-        <div class="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
-            <h2 class="text-gray-600 dark:text-gray-400">Trusted by Open Source, enterprise, and more than 99,000 of
-                you</h2>
+        <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Personil Kami</h2>
+            <p class="mt-1 text-gray-600 dark:text-gray-400">Creative people</p>
         </div>
         <!-- End Title -->
 
-        <div class="flex justify-center gap-x-6 sm:gap-x-12 lg:gap-x-24">
-            <img src="/assets/img/logo-unja.svg"
-                class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-gray-500" alt="logo-unja">
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            @foreach ($personils as $item)
+                <div class="card lg:card-side glass shadow-xl">
+                    <figure><img src="{{ Storage::url($item->image) }}" class="object-cover w-full h-80 lg:hidden"
+                            alt="Album" /></figure>
+                    <div class="card-body lg:w-52 h-full">
+                        <blockquote class="relative">
+                            <svg class="absolute top-14 left-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-gray-200 dark:text-gray-700"
+                                width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
+                                    fill="currentColor" />
+                            </svg>
 
-            <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-gray-500"
-                viewBox="0 -8.881784197001252e-16 267.51517722360785 65.24679557585003"
-                xmlns="http://www.w3.org/2000/svg" width="2500" height="610">
-                <path
-                    d="M263.043 56.411a4.418 4.418 0 1 0 .085 0zm0 8.33a3.874 3.874 0 1 1 3.809-3.938v.065a3.791 3.791 0 0 1-3.708 3.871h-.1m-16.96-9.535h-9.6V40.17c0-3.585-.064-8.2-4.993-8.2-5 0-5.765 3.906-5.765 7.939v15.294h-9.6V24.287h9.216v4.225h.129a10.1 10.1 0 0 1 9.093-4.994c9.73 0 11.524 6.4 11.524 14.726zm-40.79-35.143a5.571 5.571 0 1 1 5.57-5.572 5.571 5.571 0 0 1-5.57 5.572m4.8 35.143h-9.61V24.287h9.61zM250.87.004h-55.21a4.728 4.728 0 0 0-4.781 4.67v55.439a4.731 4.731 0 0 0 4.781 4.675h55.21a4.741 4.741 0 0 0 4.8-4.675V4.67a4.738 4.738 0 0 0-4.8-4.67m-86.12 31.749c-4.8 0-7.68 3.205-7.68 7.875s2.879 7.878 7.68 7.878 7.687-3.2 7.687-7.878-2.881-7.875-7.687-7.875m16.525 23.437h-8.838v-4.1h-.131a12.071 12.071 0 0 1-9.544 4.868c-9.224 0-15.3-6.657-15.3-16.071 0-8.646 5.377-16.585 14.216-16.585 3.973 0 7.684 1.087 9.861 4.1h.126V9.577h9.609zm-46.139-19.048a5.756 5.756 0 0 0-5.894-5.89 6.406 6.406 0 0 0-6.784 5.89zm8.132 13.7a16.909 16.909 0 0 1-13.128 6.151c-9.6 0-17.286-6.408-17.286-16.331s7.685-16.328 17.286-16.328c8.973 0 14.6 6.4 14.6 16.328v3.01h-22.282a7.171 7.171 0 0 0 7.235 6.019 8.193 8.193 0 0 0 6.851-3.778zM47.834 24.279h9.219v4.225h.131a10.085 10.085 0 0 1 9.09-4.994c9.735 0 11.527 6.405 11.527 14.726V55.19h-9.6V40.159c0-3.588-.066-8.2-5-8.2-4.99 0-5.76 3.907-5.76 7.939v15.288h-9.6zM82.669 9.58h9.6v27.265l10.88-12.583h11.77l-12.6 14.313 12.335 16.63h-12.066L92.397 39.923h-.126v15.28h-9.6zM32.911 24.276h9.6v30.916h-9.6zm4.8-15.37a5.569 5.569 0 1 1-5.57 5.569 5.569 5.569 0 0 1 5.57-5.569M0 9.587h9.993v36.4h18.5v9.222H0zm263.744 51.522a1.2 1.2 0 0 0 1.21-1.269c0-.9-.543-1.33-1.657-1.33h-1.8v4.712h.677v-2.054h.832l.019.025 1.291 2.029h.724l-1.389-2.1zm-.783-.472h-.785v-1.593h.995c.514 0 1.1.084 1.1.757 0 .774-.593.836-1.314.836"
-                    fill="currentColor" />
-            </svg>
+                            <div class="relative z-10">
+                                <div class="flex items-center">
+                                    <img class="h-12 w-12 md:mr-6 object-cover md:block hidden rounded-full"
+                                        src="{{ Storage::url($item->image) }}" alt="Image Description">
+                                    <div class="relative">
+                                        <p class="font-semibold tracking-wide uppercase text-secondary">
+                                            {{ $item->name }}
+                                        </p>
+                                        <p class="font-semibold text-sm
+                                        ">
+                                            {{ $item->position }}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="text-sm lg:text-xs font-medium italic text-gray-800 mt-3">
+                                    {{ $item->description }}
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            @endforeach
         </div>
+        <!-- End Grid -->
     </div>
-    <!-- End Clients -->
+
+    <!-- End Team -->
+    <!-- Team -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Title -->
+        <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Pengajar Kami</h2>
+            <p class="mt-1 text-gray-600 dark:text-gray-400">Creative people</p>
+        </div>
+        <!-- End Title -->
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            @foreach ($tutors as $item)
+                <div class="card lg:card-side glass shadow-xl">
+                    <figure><img src="{{ Storage::url($item->image) }}" class="object-cover w-full h-80 lg:hidden"
+                            alt="Album" /></figure>
+                    <div class="card-body lg:w-52 h-full">
+                        <blockquote class="relative">
+                            <svg class="absolute top-14 left-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-gray-200 dark:text-gray-700"
+                                width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                            <div class="relative z-10">
+                                <div class="flex items-center">
+                                    <img class="h-12 w-12 md:mr-6 object-cover md:block hidden rounded-full"
+                                        src="{{ Storage::url($item->image) }}" alt="Image Description">
+                                    <div class="relative">
+                                        <p class="font-semibold tracking-wide uppercase text-secondary">
+                                            {{ $item->name }}
+                                        </p>
+                                        <p class="font-semibold text-sm
+                                    ">
+                                            {{ $item->position }}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="text-sm lg:text-xs font-medium italic text-gray-800 mt-3">
+                                    {{ $item->description }}
+                                </p>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <!-- End Grid -->
+    </div>
+    <!-- End Team -->
 </x-app>

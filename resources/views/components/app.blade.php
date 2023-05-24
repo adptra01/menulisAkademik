@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-theme="acid" class="scroll-smooth hover:scroll-auto">
 
 <head>
     <meta charset="utf-8">
@@ -16,9 +16,9 @@
     </style>
 </head>
 
-<body>
+<body class="bg-white">
     <header class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div class="rounded-lg navbar bg-base-100 ">
+        <div class="rounded-lg navbar bg-white">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -30,23 +30,45 @@
                     </label>
                     <ul tabindex="0"
                         class="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="{{ Route('courses.arguments') }}">Menulis Argumen</a></li>
-                        <li><a href="{{ Route('courses.academies') }}">Menulis Akademik</a></li>
+                        <li><a href="/" class="active:bg-secondary">Home</a></li>
+                        <li><a href="/" class="active:bg-secondary">Tentang</a></li>
+                        <li><a href="/" class="active:bg-secondary">Pelayanan</a></li>
+                        <li tabindex="0">
+                            <a class="justify-between">
+                                Sumber Belajar
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <ul class="p-2 bg-black text-white">
+                                <li><a class="active:bg-secondary" href="{{ Route('courses.academies') }}">Menulis
+                                        Akademik</a></li>
+                                <li><a class="active:bg-secondary" href="{{ Route('courses.arguments') }}">Menulis
+                                        Argumen</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                <a href="/" class="text-xl normal-case btn btn-ghost text-primary">Menulis</a>
+                <a href="/" class="text-xl normal-case btn btn-ghost text-secondary">Menulis</a>
             </div>
             <div class="hidden navbar-center lg:flex">
                 <ul class="px-1 menu menu-horizontal">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="{{ Route('courses.arguments') }}">Menulis Argumen</a></li>
-                    <li><a href="{{ Route('courses.academies') }}">Menulis Akademik</a></li>
+                    <li><a href="/" class="active:bg-secondary">Home</a></li>
+                    <li><a href="/" class="active:bg-secondary">Tentang</a></li>
+                    <li><a href="/" class="active:bg-secondary">Pelayanan</a></li>
+                    <li class="dropdown">
+                        <label tabindex="0" class="m-1 active:bg-secondary">Sumber Belajar</label>
+                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="{{ Route('courses.arguments') }}">Menulis Argumen</a></li>
+                            <li><a href="{{ Route('courses.academies') }}">Menulis Akademik</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="navbar-end">
                 <a href="https://api.whatsapp.com/send/?phone=085266113072&text&type=phone_number&app_absent=0"
-                    class="btn btn-primary">Get started</a>
+                    class="btn text-white btn-secondary">Get started</a>
             </div>
         </div>
     </header>

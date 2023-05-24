@@ -30,7 +30,7 @@ class ArgumentFactory extends Factory
                 return ArgumentCategory::all()->random();
             },
             'title' => $this->faker->sentence(),
-            'description' => $this->faker->paragraphs(),
+            'description' => $this->faker->paragraph(),
         ];
     }
 }

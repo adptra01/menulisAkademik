@@ -5,11 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\Academy;
 use App\Models\Argument;
 use App\Models\ArgumentCategory;
+use App\Models\Personil;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()
+   public function index()
     {
         return view('home', [
             'academy' => Academy::get(),

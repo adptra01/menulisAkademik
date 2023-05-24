@@ -4,6 +4,8 @@ use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\ArgumentCategoryController;
 use App\Http\Controllers\ArgumentController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PersonilController;
+use App\Http\Controllers\TutorController;
 use App\Models\Academy;
 use App\Models\Argument;
 use App\Models\ArgumentCategory;
@@ -27,17 +29,14 @@ Auth::routes();
 
 
 Route::get('/', function () {
-    $arguments = Argument::inRandomOrder()->limit(3)->get();
-    $academies = Academy::inRandomOrder()->limit(3)->get();
-
+    $personils = App\models\Personil::get();
+    $tutors = App\models\Tutor::get();
     return view('welcome', [
-        'random' => [
-            'academies' => $academies,
-            'arguments' => $arguments,
-        ],
+        'personils' => $personils,
+        'tutors' => $tutors,
     ]);
-
 });
+
 Route::get('/courses-academies', [HomeController::class, 'academies'])->name('courses.academies');
 Route::get('/courses-arguments', [HomeController::class, 'arguments'])->name('courses.arguments');
 
@@ -75,4 +74,21 @@ Route::prefix('/argument-categories')->group(function () {
     Route::get('/{slug}', [ArgumentCategoryController::class, 'show'])->name('argumentCategory.show');
     Route::put('/{slug}', [ArgumentCategoryController::class, 'update'])->name('argumentCategory.update');
     Route::delete('/{slug}', [ArgumentCategoryController::class, 'destroy'])->name('argumentCategory.destroy');
+});
+
+
+Route::prefix('tutors')->group(function () {
+    route::get('/', [TutorController::class, 'index'])->name('tutor');
+    route::post('/', [TutorController::class, 'store'])->name('tutor.store');
+    route::get('/{slug}', [TutorController::class, 'show'])->name('tutor.show');
+    route::put('/{slug}', [TutorController::class, 'update'])->name('tutor.update');
+    route::delete('/{slug}', [TutorController::class, 'destroy'])->name('tutor.destroy');
+});
+
+Route::prefix('personils')->group(function () {
+    route::get('/', [PersonilController::class, 'index'])->name('personil');
+    route::post('/', [PersonilController::class, 'store'])->name('personil.store');
+    route::get('/{slug}', [PersonilController::class, 'show'])->name('personil.show');
+    route::put('/{slug}', [PersonilController::class, 'update'])->name('personil.update');
+    route::delete('/{slug}', [PersonilController::class, 'destroy'])->name('personil.destroy');
 });

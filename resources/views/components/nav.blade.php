@@ -31,4 +31,20 @@
         </a>
     </li>
 
+    <!-- Personil -->
+    <li class="menu-item">
+        <a href="{{ route('personil') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-book-reader"></i>
+            <div data-i18n="argument">Personil</div>
+        </a>
+    </li>
+
+    <!-- tutor -->
+    <li class="menu-item">
+        <a href="{{ route('tutor') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-book-reader"></i>
+            <div data-i18n="argument">Tutor</div>
+        </a>
+    </li>
+
 </ul>

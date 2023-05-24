@@ -61,12 +61,12 @@
                 </a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-link">
-                    <div>Jasa</div>
+                <a href="{{ Route('service') }}" class="menu-link">
+                    <div>Pelayanan</div>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-link">
+                <a href="{{ Route('guideline') }}" class="menu-link">
                     <div>Pedoman</div>
                 </a>
             </li>

@@ -4,12 +4,15 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\ArgumentCategoryController;
 use App\Http\Controllers\ArgumentController;
+use App\Http\Controllers\GuidelineController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PersonilController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TutorController;
 use App\Models\Academy;
 use App\Models\Argument;
 use App\Models\ArgumentCategory;
+use App\Models\Guideline;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -40,8 +43,10 @@ Route::get('/', function () {
 
 Route::get('/courses-academies', [HomeController::class, 'academies'])->name('courses.academies');
 Route::get('/courses-arguments', [HomeController::class, 'arguments'])->name('courses.arguments');
-
 Route::get('courses/{slug}', [HomeController::class, 'details'])->name('details');
+Route::get('courses-guidelines', [HomeController::class, 'guidelines'])->name('courses.guidelines');
+Route::get('courses-services', [HomeController::class, 'services'])->name('courses.services');
+Route::get('courses-abouts', [HomeController::class, 'abouts'])->name('courses.abouts');
 
 
 Route::middleware(['auth'])->group(function () {
@@ -49,7 +54,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/image-upload', [AcademyController::class, 'storeImage'])->name('image.upload');
     Route::get('/materials', [HomeController::class, 'materials'])->name('materials');
 });
-
 
 
 Route::prefix('/academies')->group(function () {
@@ -94,8 +98,17 @@ Route::prefix('personils')->group(function () {
     route::delete('/{slug}', [PersonilController::class, 'destroy'])->name('personil.destroy');
 });
 
-Route::prefix('about')->group(function () {
+Route::prefix('abouts')->group(function () {
     Route::get('/', [AboutController::class, 'index'])->name('about');
     Route::put('/{id}', [AboutController::class, 'update'])->name('about.update');
-    
+});
+
+Route::prefix('guidelines')->group(function () {
+    Route::get('/', [GuidelineController::class, 'index'])->name('guideline');
+    Route::put('/{id}', [GuidelineController::class, 'update'])->name('guideline.update');
+});
+
+Route::prefix('services')->group(function () {
+    Route::get('/', [ServiceController::class, 'index'])->name('service');
+    Route::put('/{id}', [ServiceController::class, 'update'])->name('service.update');
 });

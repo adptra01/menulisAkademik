@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Academy;
 use App\Models\Argument;
 use App\Models\ArgumentCategory;
+use App\Models\Guideline;
 use App\Models\Personil;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -44,11 +47,9 @@ class HomeController extends Controller
             ];
         }
 
-        // dd($arguments);
-
         return view('courses.arguments', [
             'arguments' => $arguments,
-]);
+    ]);
 
     }
 
@@ -71,6 +72,26 @@ class HomeController extends Controller
             'details' => $details,
             'randArguments' => $randArguments,
             'randAcadmies' => $randAcadmies,
+        ]);
+    }
+
+    public function abouts()
+    {
+        return view('abouts', [
+            'abouts' => About::first()
+        ]);
+    }
+    public function services()
+    {
+        return view('services', [
+            'services' => Service::first()
+        ]);
+    }
+
+    public function guidelines()
+    {
+        return view('guidelines', [
+            'guidelines' => Guideline::first()
         ]);
     }
 

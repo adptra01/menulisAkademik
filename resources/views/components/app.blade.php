@@ -31,8 +31,9 @@
                     <ul tabindex="0"
                         class="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
                         <li><a href="/" class="active:bg-secondary">Home</a></li>
-                        <li><a href="/" class="active:bg-secondary">Tentang</a></li>
-                        <li><a href="/" class="active:bg-secondary">Pelayanan</a></li>
+                        <li><a href="{{ Route('courses.abouts') }}" class="active:bg-secondary">Tentang</a></li>
+                        <li><a href="{{ Route('courses.services') }}" class="active:bg-secondary">Pelayanan</a></li>
+                        <li><a href="{{ Route('courses.guidelines') }}" class="active:bg-secondary">Pedoman</a></li>
                         <li tabindex="0">
                             <a class="justify-between">
                                 Sumber Belajar
@@ -55,8 +56,9 @@
             <div class="hidden navbar-center lg:flex">
                 <ul class="px-1 menu menu-horizontal">
                     <li><a href="/" class="active:bg-secondary">Home</a></li>
-                    <li><a href="/" class="active:bg-secondary">Tentang</a></li>
-                    <li><a href="/" class="active:bg-secondary">Pelayanan</a></li>
+                    <li><a href="{{ Route('courses.abouts') }}" class="active:bg-secondary">Tentang</a></li>
+                    <li><a href="{{ Route('courses.services') }}" class="active:bg-secondary">Pelayanan</a></li>
+                    <li><a href="{{ Route('courses.guidelines') }}" class="active:bg-secondary">Pedoman</a></li>
                     <li class="dropdown">
                         <label tabindex="0" class="m-1 active:bg-secondary">Sumber Belajar</label>
                         <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">

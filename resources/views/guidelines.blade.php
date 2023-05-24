@@ -7,17 +7,18 @@
                 <!-- Title -->
                 <div class="text-center">
                     <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase mb-3 dark:text-gray-200">
-                        Small business solutions
+                        pedoman yang dapat membantu Anda dalam
+                        perjalanan peningkatan
                     </p>
                     <h1
                         class="text-3xl text-gray-800 font-bold sm:text-5xl lg:text-6xl lg:leading-tight dark:text-gray-200">
-                        Turn online shoppers into <span class="text-blue-500">lifetime customers</span>
+                        Seni Menulis Akademik <span class="text-blue-500">dan Keterampilan Argumentasi</span>
                     </h1>
                 </div>
                 <!-- End Title -->
 
                 <div class="card bg-base-100 shadow-xl">
-                    <div class="card-body prose">
+                    <div class="card-body prose m-5">
                         {!! $guidelines->description !!}
                     </div>
                 </div>

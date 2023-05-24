@@ -20,7 +20,7 @@ class TutorFactory extends Factory
     {
         $file = UploadedFile::fake()->image('thumbnail.jpg');
         $fileName = rand(0,9999999) . '_' . $file->getClientOriginalName();
-        $filePath = $file->storeAs('personil', $fileName, 'public');
+        $filePath = $file->storeAs('tutor', $fileName, 'public');
 
         return [
             'name' => $this->faker->userName(),

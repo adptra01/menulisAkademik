@@ -5,7 +5,7 @@
             Tentang Kami
         </h2>
         <p class="mt-3 text-gray-800 dark:text-gray-200">
-            The powerful and flexible theme for all kinds of businesses.
+            Kami percaya bahwa kemampuan menulis yang kuat dan kemahiran berargumentasi yang efektif adalah kunci untuk kesuksesan akademik dan profesional.
         </p>
     </div>
     <!-- Features -->
